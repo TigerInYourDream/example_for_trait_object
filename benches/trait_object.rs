@@ -1,5 +1,7 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use example_for_trait_object::{execute_boxed_trait_object, execute_genrics, execute_trait_object, Shell};
+use example_for_trait_object::{
+    execute_boxed_trait_object, execute_genrics, execute_trait_object, Shell,
+};
 
 pub fn genericis_benchmark(c: &mut Criterion) {
     c.bench_function("generics", |b| {

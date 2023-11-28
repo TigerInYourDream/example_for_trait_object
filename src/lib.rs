@@ -7,8 +7,8 @@ pub struct Shell<'a, 'b> {
 }
 
 impl<'a, 'b> Shell<'a, 'b> {
-    pub fn new(p1: &'a str, p2: &'b [&'a str]) -> Self {
-        Self { cmd: p1, args: p2 }
+    pub fn new(cmd: &'a str, args: &'b [&'a str]) -> Self {
+        Self { cmd, args }
     }
 }
 
